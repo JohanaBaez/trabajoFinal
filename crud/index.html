@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operaciones CRUD</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Operaciones CRUD</h1>
+    
+    <!-- Productos -->
+    <h2>Productos</h2>
+    <form id="product-form">
+        <input type="text" id="product-name" placeholder="Nombre del producto">
+        <input type="text" id="product-marca" placeholder="Marca del producto">
+        <input type="text" id="product-color" placeholder="Color del producto">
+        <input type="text" id="product-tamaño" placeholder="Tamaño del producto">
+        <input type="text" id="product-price" placeholder="Precio del producto">
+        <input type="file" id="product-image" accept="image/*">
+        <button type="button" onclick="addProduct()">Agregar</button>
+    </form>
+    <ul id="product-list"></ul>
+    
+    <!-- Usuarios -->
+    <h2>Usuarios</h2>
+    <form id="user-form">
+        <input type="text" id="user-name" placeholder="Nombre del usuario">
+        <input type="text" id="user-apellido" placeholder="Apellido del usuario">
+        <input type="text" id="user-edad" placeholder="Edad del usuario">
+        <input type="text" id="user-nacionalidad" placeholder="Nacionalidad del usuario">
+        <input type="email" id="user-email" placeholder="Correo electrónico">
+        <button type="button" onclick="addUser()">Agregar</button>
+    </form>
+    <ul id="user-list"></ul>
+    
+    <!-- Facturas -->
+    <h2>Facturas</h2>
+    <form id="invoice-form">
+        <input type="text" id="invoice-number" placeholder="Número de factura">
+        <input type="date" id="invoice-date" placeholder="Fecha de factura">
+        <input type="text" id="invoice-tienda" placeholder="Nombre de la tienda">
+        <input type="text" id="invoice-usuario" placeholder="Usuario de factura">
+        <input type="text" id="invoice-producto" placeholder="Nombre del producto">
+        <input type="text" id="invoice-precio" placeholder="precio de factura">
+        <button type="button" onclick="addInvoice()">Agregar</button>
+    </form>
+    <ul id="invoice-list"></ul>
+    
+    <script src="app.js"></script>
+</body>
+</html>
+
